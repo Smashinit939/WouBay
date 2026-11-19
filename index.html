@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6ead4" />
+  <meta name="description" content="WouBay — the student marketplace for Woxsen University. Buy, rent, sell and request, all on campus." />
+  <title>WouBay — Woxsen Student Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" data-home-link aria-label="WouBay home">
+        <span class="brand-mark"><span>W</span><i></i></span>
+        <span class="brand-name">Wou<span>Bay</span><small>THE CAMPUS MARKETPLACE</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="home">Home</button>
+        <button class="nav-link" data-view="market" data-mode="buy">Explore</button>
+        <button class="nav-link" data-view="requests">Requests</button>
+        <button class="nav-link" data-view="admin">Admin preview</button>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode" title="Toggle light and dark mode"><span id="themeGlyph">☾</span></button>
+        <button class="header-cta" data-view="market" data-mode="buy">Explore marketplace <span>↗</span></button>
+        <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <!-- LANDING PAGE -->
+      <section class="page-view active" id="homeView" aria-labelledby="heroTitle">
+        <section class="hero section-wrap">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> MADE FOR THE WOXSEN COMMUNITY</div>
+            <h1 id="heroTitle">Welcome to<br><em>WouBay.</em></h1>
+            <p class="hero-lead" id="heroTagline">A place for all your campus needs. Find it, borrow it, pass it on — all without leaving campus.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-view="market" data-mode="buy">Explore the marketplace <span>↗</span></button>
+              <button class="btn btn-quiet" data-view="requests">See what students need <span>→</span></button>
+            </div>
+            <div class="hero-proof"><div class="avatar-stack"><b>W</b><b>✦</b><b>↗</b></div><span>One campus. A lot of possibilities.</span></div>
+          </div>
+          <div class="hero-art" aria-label="A colourful collage of things students can buy, rent and share">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="art-note note-top"><span>✦</span> Good finds, closer by</div>
+            <div class="art-photo photo-books"><img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=700&q=85" alt="A stack of books" onerror="this.style.display='none'"><span class="photo-fallback">📚</span><label>TEXTBOOKS</label></div>
+            <div class="art-photo photo-camera"><img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=700&q=85" alt="Camera equipment" onerror="this.style.display='none'"><span class="photo-fallback">📷</span></div>
+            <div class="art-photo photo-headphones"><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=700&q=85" alt="Headphones" onerror="this.style.display='none'"><span class="photo-fallback">🎧</span></div>
+            <div class="art-photo photo-cycle"><img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=700&q=85" alt="A bicycle" onerror="this.style.display='none'"><span class="photo-fallback">🚲</span></div>
+            <div class="art-sticker sticker-rent"><strong>RENT</strong><span>Need it for a bit?</span></div>
+            <div class="art-sticker sticker-sell"><strong>PASS IT ON</strong><span>Give good stuff a second life ↗</span></div>
+            <div class="art-note note-bottom">WouBay <span>✳</span> Woxsen</div>
+          </div>
+          <div class="hero-scroll"><span></span> SCROLL TO EXPLORE</div>
+        </section>
+
+        <section class="quick-entry section-wrap" id="get-started">
+          <div class="section-kicker">YOUR NEXT CAMPUS FIND IS HERE</div>
+          <div class="quick-heading"><h2>What brings you<br><em>to WouBay?</em></h2><p>Pick your path. The good stuff is just a click away.</p></div>
+          <div class="bubble-grid">
+            <article class="entry-bubble bubble-request" role="button" tabindex="0" data-view="requests">
+              <div class="bubble-icon">✳</div><span class="bubble-number">01 / REQUEST</span><h3>Need<br>something?</h3>
+              <p class="bubble-desc">Post what you're looking for and let the campus community help you find it.</p>
+              <span class="bubble-arrow">↗</span>
+            </article>
+            <article class="entry-bubble bubble-trade" tabindex="0">
+              <div class="bubble-icon">↗</div><span class="bubble-number">02 / FIND YOURS</span><h3>Buy or<br>rent</h3>
+              <p class="bubble-desc">Own it for good, or borrow it for just as long as you need.</p>
+              <div class="split-bubbles"><button data-view="market" data-mode="buy">Buy <span>↗</span></button><button data-view="market" data-mode="rent">Rent <span>↗</span></button></div>
+            </article>
+            <article class="entry-bubble bubble-list" tabindex="0">
+              <div class="bubble-icon">✦</div><span class="bubble-number">03 / PASS IT ON</span><h3>Sell or<br>put up for rent</h3>
+              <p class="bubble-desc">Turn things you don't use into someone else's next great find.</p>
+              <div class="split-bubbles"><button data-action="list-sale">Sell <span>↗</span></button><button data-action="list-rent">Rent out <span>↗</span></button></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="intro-band section-wrap">
+          <div class="intro-graphic"><div class="intro-sun">✳</div><div class="intro-stamp">GOOD<br>THINGS<br>GO ROUND</div><div class="intro-doodle">↗</div></div>
+          <div class="intro-copy"><div class="section-kicker">SO, WHAT IS WOUBAY?</div><h2>Campus life, with<br><em>less hassle.</em></h2><p>Think of WouBay as your campus noticeboard, thrift store and rental desk rolled into one. It's a marketplace made for Woxsen students, where useful things find new owners and one-time needs don't have to mean one-time purchases.</p><button class="text-link" data-view="market" data-mode="buy">Find your next good thing <span>→</span></button></div>
+        </section>
+
+        <section class="how-section section-wrap">
+          <div class="section-head"><div><div class="section-kicker">NO COMPLICATED GROUP CHATS</div><h2>How it <em>works.</em></h2></div><p>Four simple steps. From “does anyone have one?” to “sorted.”</p></div>
+          <div class="steps-grid">
+            <article class="step-card"><span class="step-num">01</span><div class="step-illustration step-request">🗒️</div><h3>Request an item</h3><p>Tell the campus what you need. Sellers can spot your request and reach out.</p><span class="step-line"></span></article>
+            <article class="step-card"><span class="step-num">02</span><div class="step-illustration step-search">🔎</div><h3>List or discover</h3><p>Add photos and a price, or browse items students have listed for sale or rent.</p><span class="step-line"></span></article>
+            <article class="step-card"><span class="step-num">03</span><div class="step-illustration step-chat">💬</div><h3>Connect and agree</h3><p>Message through the platform, ask questions and settle on the details.</p><span class="step-line"></span></article>
+            <article class="step-card"><span class="step-num">04</span><div class="step-illustration step-meet">🤝</div><h3>Meet on campus</h3><p>Choose a public campus meetup spot, exchange the item and leave a rating.</p><span class="step-line"></span></article>
+          </div>
+          <div class="rent-note"><span>↗</span> Renting follows the same flow — the owner sets a price per day and you agree on a return date.</div>
+        </section>
+
+        <section class="feature-section section-wrap">
+          <div class="feature-heading"><div class="section-kicker">A LITTLE BIT OF EVERYTHING</div><h2>One campus.<br><em>Many possibilities.</em></h2><p>From semester essentials to last-minute fest finds, give useful things another round.</p><button class="btn btn-primary" data-view="market" data-mode="buy">Start exploring <span>↗</span></button></div>
+          <div class="feature-collage">
+            <div class="feature-tile tile-books"><img src="https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?auto=format&fit=crop&w=600&q=85" alt="Books" onerror="this.style.display='none'"><span>📚</span><label>BOOKS & NOTES</label></div>
+            <div class="feature-tile tile-tech"><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=600&q=85" alt="Laptop" onerror="this.style.display='none'"><span>💻</span><label>GADGETS</label></div>
+            <div class="feature-tile tile-gear"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=600&q=85" alt="Fashion accessories" onerror="this.style.display='none'"><span>👕</span><label>FEST FITS</label></div>
+            <div class="feature-tile tile-cycle"><img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=600&q=85" alt="Bicycle" onerror="this.style.display='none'"><span>🚲</span><label>CYCLES & MORE</label></div>
+            <div class="collage-caption">BUY A LITTLE.<br>RENT A LITTLE.<br>WASTE LESS.</div>
+          </div>
+        </section>
+
+        <section class="trust-section section-wrap">
+          <div class="trust-top"><div class="section-kicker">GOOD DEALS. GOOD PEOPLE.</div><h2>Built around<br><em>campus trust.</em></h2><p>WouBay is designed around a student community. A few simple features help make every exchange more comfortable.</p></div>
+          <div class="trust-list">
+            <div><span>✳</span><section><h3>Verified Woxsen accounts</h3><p>Sign up with a university email so the marketplace stays campus-focused.</p></section></div>
+            <div><span>☆</span><section><h3>Ratings and reviews</h3><p>Build a reputation with each completed exchange.</p></section></div>
+            <div><span>⌖</span><section><h3>Campus meetup points</h3><p>Choose public, busy spots when handing over an item.</p></section></div>
+            <div><span>⚑</span><section><h3>Report and block</h3><p>Flag a listing or behaviour that doesn't feel right.</p></section></div>
+          </div>
+        </section>
+
+        <section class="team-section section-wrap">
+          <div class="section-head"><div><div class="section-kicker">MADE BY THE CAMPUS, FOR THE CAMPUS</div><h2>Meet the <em>creators.</em></h2></div><p>Four students. One idea to make campus life a little easier.</p></div>
+          <div class="team-grid">
+            <article class="team-card"><div class="team-avatar avatar-one">PS</div><h3>P. Shiva Balaji</h3><span>THE WOUBAY TEAM</span></article>
+            <article class="team-card"><div class="team-avatar avatar-two">YH</div><h3>Y. Harsha Vardhan</h3><span>THE WOUBAY TEAM</span></article>
+            <article class="team-card"><div class="team-avatar avatar-three">I</div><h3>Ishaq</h3><span>THE WOUBAY TEAM</span></article>
+            <article class="team-card"><div class="team-avatar avatar-four">O</div><h3>Owais</h3><span>THE WOUBAY TEAM</span></article>
+          </div>
+          <p class="team-photo-note">Team photo placeholders — swap these initials for your photos before the final launch.</p>
+        </section>
+
+        <section class="final-cta section-wrap"><div class="cta-spark">✳</div><div><div class="section-kicker">YOUR CAMPUS MARKETPLACE AWAITS</div><h2>Find it. Use it.<br><em>Pass it on.</em></h2></div><button class="btn btn-light" data-view="market" data-mode="buy">Let's go to WouBay <span>↗</span></button></section>
+      </section>
+
+      <!-- MARKETPLACE PAGE -->
+      <section class="page-view" id="marketView" aria-labelledby="marketTitle">
+        <div class="inner-page-head section-wrap"><div class="breadcrumb">HOME <span>/</span> MARKETPLACE</div><div class="page-title-row"><div><div class="section-kicker">GOOD FINDS LIVE HERE</div><h1 id="marketTitle">The campus <em>market.</em></h1><p>Find useful things from fellow Woxsen students.</p></div><button class="btn btn-primary" id="openListingFromMarket">＋ List an item</button></div>
+          <div class="market-controls"><div class="mode-tabs"><button class="mode-tab active" data-mode-tab="buy">Buy</button><button class="mode-tab" data-mode-tab="rent">Rent</button></div><label class="search-box"><span>⌕</span><input id="marketSearch" type="search" placeholder="Search books, gadgets, cycles..." aria-label="Search listings"></label><select id="categoryFilter" aria-label="Filter by category"><option value="all">All categories</option><option>Books & Notes</option><option>Gadgets</option><option>Hostel & Living</option><option>Cycles & Sports</option><option>Clothing & Costumes</option><option>Project Gear</option><option>Other</option></select></div>
+          <div class="result-bar"><span id="marketCount">Showing listings</span><span class="sort-label">CAMPUS FINDS, NOT CLUTTER.</span></div>
+          <div class="listing-grid" id="listingGrid"></div>
+          <div class="empty-state" id="marketEmpty" hidden><span>✳</span><h3>No finds just yet.</h3><p>Try another search or be the first to list something.</p><button class="btn btn-primary" id="emptyListBtn">List an item</button></div>
+        </div>
+      </section>
+
+      <!-- REQUESTS PAGE -->
+      <section class="page-view" id="requestsView" aria-labelledby="requestsTitle">
+        <div class="inner-page-head section-wrap"><div class="breadcrumb">HOME <span>/</span> REQUEST BOARD</div><div class="page-title-row"><div><div class="section-kicker">ASK THE CAMPUS</div><h1 id="requestsTitle">The <em>request board.</em></h1><p>Looking for something? Put it out there. Someone might have just what you need.</p></div><button class="btn btn-primary" id="openRequestBtn">＋ Add a request</button></div>
+          <div class="request-toolbar"><label class="search-box"><span>⌕</span><input id="requestSearch" type="search" placeholder="Search requests..." aria-label="Search requests"></label><span class="request-tip">💡 Have something on this list? Help a fellow student out.</span></div>
+          <div class="request-grid" id="requestGrid"></div>
+          <div class="empty-state" id="requestEmpty" hidden><span>✳</span><h3>No requests match that.</h3><p>Try a different search or add the first request.</p><button class="btn btn-primary" id="emptyRequestBtn">Add a request</button></div>
+        </div>
+      </section>
+
+      <!-- ADMIN PREVIEW -->
+      <section class="page-view" id="adminView" aria-labelledby="adminTitle">
+        <div class="inner-page-head section-wrap"><div class="breadcrumb">HOME <span>/</span> OWNER DASHBOARD</div><div class="page-title-row"><div><div class="section-kicker">DEMO CONTROL ROOM</div><h1 id="adminTitle">The owner <em>dashboard.</em></h1><p>Manage the demo marketplace content. These changes stay in this browser.</p></div><span class="demo-pill">DEMO ADMIN</span></div>
+          <div class="admin-notice"><span>ⓘ</span><p>This is a front-end admin preview, not a secured admin account. Do not use it with real student data until authentication and a backend are connected.</p></div>
+          <div class="stats-grid" id="adminStats"></div>
+          <div class="admin-columns">
+            <section class="admin-panel"><div class="panel-heading"><div><span class="section-kicker">CONTENT</span><h2>Manage listings</h2></div><button class="text-link" data-view="market" data-mode="buy">View marketplace →</button></div><div id="adminListings" class="admin-list"></div></section>
+            <section class="admin-panel"><div class="panel-heading"><div><span class="section-kicker">COMMUNITY</span><h2>Reports & flags</h2></div><span class="count-chip" id="reportCount">0 open</span></div><div id="adminReports" class="admin-list"></div></section>
+          </div>
+          <div class="admin-columns admin-lower">
+            <section class="admin-panel"><div class="panel-heading"><div><span class="section-kicker">SITE SETTINGS</span><h2>Homepage copy</h2></div></div><form id="copyForm" class="admin-form"><label>Hero tagline<input name="tagline" id="taglineInput" maxlength="130" /></label><div class="form-actions"><button class="btn btn-primary" type="submit">Save homepage text</button></div></form></section>
+            <section class="admin-panel"><div class="panel-heading"><div><span class="section-kicker">ORGANISE</span><h2>Categories</h2></div></div><form id="categoryForm" class="category-form"><input id="newCategory" placeholder="Add a category" maxlength="28" aria-label="New category"><button class="btn btn-primary" type="submit">Add</button></form><div class="category-chips" id="adminCategories"></div></section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap">
+      <div class="footer-main"><a class="brand footer-brand" href="#top" data-home-link><span class="brand-mark"><span>W</span><i></i></span><span class="brand-name">Wou<span>Bay</span><small>THE CAMPUS MARKETPLACE</small></span></a><p>Made for Woxsen students.<br>Good things go round.</p><button class="text-link" id="openContactBtn">Get in touch <span>↗</span></button></div>
+      <div class="footer-bottom"><span>© 2026 WouBay · Woxsen University</span><span>BUY · RENT · SELL · REQUEST</span><button class="back-top" data-home-link>BACK TO TOP ↑</button></div>
+    </footer>
+  </div>
+
+  <!-- LIST AN ITEM MODAL -->
+  <div class="modal-backdrop" id="listingModal" aria-hidden="true"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="listingModalTitle"><button class="modal-close" data-close-modal aria-label="Close">×</button><div class="modal-kicker">PUT SOMETHING OUT THERE</div><h2 id="listingModalTitle">List an <em>item.</em></h2><p class="modal-intro">Give your item a second life in the Woxsen community.</p>
+    <form id="listingForm" class="stack-form"><div class="form-two"><label>I'm looking to <select name="mode" id="listingMode"><option value="buy">Sell it</option><option value="rent">Put it up for rent</option></select></label><label>Category<select name="category" required><option>Books & Notes</option><option>Gadgets</option><option>Hostel & Living</option><option>Cycles & Sports</option><option>Clothing & Costumes</option><option>Project Gear</option><option>Other</option></select></label></div><label>Item name<input name="name" required maxlength="60" placeholder="e.g. Scientific calculator" /></label><div class="form-two"><label>Price (₹)<input name="price" type="number" min="1" required placeholder="e.g. 500" /></label><label>For rent: price per day<input name="priceUnit" id="priceUnit" value="per item" readonly /></label></div><label>Description<textarea name="description" rows="3" maxlength="350" placeholder="Condition, details, what the buyer should know..." required></textarea></label><div class="form-two"><label>Your display name<input name="seller" required maxlength="32" placeholder="First name or nickname" /></label><label>Campus meetup area<select name="location"><option>Campus common area</option><option>Academic block</option><option>Hostel common area</option><option>Library area</option><option>Sports complex</option></select></label></div><label class="upload-field"><span>＋</span><span><strong>Add a photo</strong><small>Optional · JPG, PNG or WEBP · up to 1.5 MB</small></span><input name="photo" id="listingPhoto" type="file" accept="image/png,image/jpeg,image/webp" /></label><p class="privacy-hint">🔒 Your personal phone number, email and room number are not shown publicly. Keep conversations on-platform and arrange handovers at public campus spots.</p><button class="btn btn-primary btn-full" type="submit">Publish listing <span>↗</span></button></form>
+  </section></div>
+
+  <!-- REQUEST MODAL -->
+  <div class="modal-backdrop" id="requestModal" aria-hidden="true"><section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="requestModalTitle"><button class="modal-close" data-close-modal aria-label="Close">×</button><div class="modal-kicker">LET THE CAMPUS KNOW</div><h2>Make a <em>request.</em></h2><p class="modal-intro">Tell people what you're looking for. Keep it clear and someone may have one to share.</p>
+    <form id="requestForm" class="stack-form"><label>What are you looking for?<input name="name" required maxlength="60" placeholder="e.g. Lab coat, cycle, HDMI cable..." /></label><div class="form-two"><label>Category<select name="category"><option>Books & Notes</option><option>Gadgets</option><option>Hostel & Living</option><option>Cycles & Sports</option><option>Clothing & Costumes</option><option>Project Gear</option><option>Other</option></select></label><label>Budget (₹, optional)<input name="budget" type="number" min="0" placeholder="e.g. 300" /></label></div><label>Description<textarea name="description" rows="3" maxlength="350" placeholder="Any specific details? How long do you need it for?" required></textarea></label><div class="form-two"><label>Your display name<input name="requester" required maxlength="32" placeholder="First name or nickname" /></label><label>Needed by<input name="neededBy" type="date" /></label></div><label class="upload-field"><span>＋</span><span><strong>Add a reference photo</strong><small>Optional · JPG, PNG or WEBP · up to 1.5 MB</small></span><input name="photo" id="requestPhoto" type="file" accept="image/png,image/jpeg,image/webp" /></label><p class="privacy-hint">🔒 Your contact details and room number stay private. Interested students can use the demo contact button to start a conversation.</p><button class="btn btn-primary btn-full" type="submit">Post my request <span>↗</span></button></form>
+  </section></div>
+
+  <!-- ITEM DETAIL / CONTACT MODAL -->
+  <div class="modal-backdrop" id="detailModal" aria-hidden="true"><section class="modal-card detail-modal-card" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><button class="modal-close" data-close-modal aria-label="Close">×</button><div id="detailContent"></div></section></div>
+  <div class="modal-backdrop" id="contactModal" aria-hidden="true"><section class="modal-card compact-modal" role="dialog" aria-modal="true" aria-labelledby="contactTitle"><button class="modal-close" data-close-modal aria-label="Close">×</button><div class="modal-kicker">A NOTE TO THE WOUBAY TEAM</div><h2 id="contactTitle">Say <em>hello.</em></h2><p class="modal-intro">This demo keeps your message in the browser only. A live version can connect this form to the team inbox.</p><form id="contactForm" class="stack-form"><label>Your name<input name="name" required placeholder="Your name" /></label><label>Your message<textarea name="message" required rows="4" placeholder="Tell us what you think..."></textarea></label><button class="btn btn-primary btn-full" type="submit">Save message <span>↗</span></button></form></section></div>
+  <div class="modal-backdrop" id="rentModal" aria-hidden="true"><section class="modal-card compact-modal" role="dialog" aria-modal="true" aria-labelledby="rentTitle"><button class="modal-close" data-close-modal aria-label="Close">×</button><div class="modal-kicker">BORROW IT, THEN BRING IT BACK</div><h2 id="rentTitle">Plan your <em>rental.</em></h2><p id="rentItemName" class="modal-intro"></p><form id="rentForm" class="stack-form"><label>Your preferred return date and time<input type="datetime-local" name="returnAt" required /></label><label>Your name<input name="name" required placeholder="Your name" maxlength="32" /></label><p class="privacy-hint">This is a demo request only. In a live version, the owner would confirm availability and the return plan.</p><button class="btn btn-primary btn-full" type="submit">Send rental request <span>↗</span></button></form></section></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
